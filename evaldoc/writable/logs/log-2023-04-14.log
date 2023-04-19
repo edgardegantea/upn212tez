@@ -1,0 +1,62 @@
+ERROR - 2023-04-14 05:38:32 --> mysqli_sql_exception: Invalid default value for 'created_at' in E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `p...', 0)
+#1 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\app\Database\Migrations\2023-04-14-050412_PeriodoEscolar.php(24): CodeIgniter\Database\Forge->createTable('periodoescolar', true)
+#5 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\MigrationRunner.php(877): App\Database\Migrations\PeriodoEscolar->up()
+#6 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-04-14 05:39:59 --> mysqli_sql_exception: Invalid default value for 'created_at' in E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `p...', 0)
+#1 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\app\Database\Migrations\2023-04-14-050412_PeriodoEscolar.php(24): CodeIgniter\Database\Forge->createTable('periodoescolar', true)
+#5 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\MigrationRunner.php(877): App\Database\Migrations\PeriodoEscolar->up()
+#6 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\spark(97): CodeIgniter\CLI\Console->run()
+#11 {main}
+ERROR - 2023-04-14 05:40:04 --> mysqli_sql_exception: Invalid default value for 'created_at' in E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `p...', 0)
+#1 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `p...')
+#2 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `p...')
+#3 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `p...')
+#4 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\app\Database\Migrations\2023-04-14-050412_PeriodoEscolar.php(24): CodeIgniter\Database\Forge->createTable('periodoescolar', true)
+#5 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\MigrationRunner.php(877): App\Database\Migrations\PeriodoEscolar->up()
+#6 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-04-14 05:40:43 --> mysqli_sql_exception: Invalid default value for 'created_at' in E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\MySQLi\Connection.php(295): mysqli->query('CREATE TABLE `m...', 0)
+#1 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('CREATE TABLE `m...')
+#2 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('CREATE TABLE `m...')
+#3 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\Forge.php(546): CodeIgniter\Database\BaseConnection->query('CREATE TABLE `m...')
+#4 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\app\Database\Migrations\2023-04-14-051321_Modalidad.php(20): CodeIgniter\Database\Forge->createTable('modalidades', true)
+#5 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\MigrationRunner.php(877): App\Database\Migrations\Modalidad->up()
+#6 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Database\MigrationRunner.php(188): CodeIgniter\Database\MigrationRunner->migrate('up', Object(stdClass))
+#7 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Commands\Database\Migrate.php(84): CodeIgniter\Database\MigrationRunner->latest(NULL)
+#8 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Migrate->run(Array)
+#9 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate', Array)
+#10 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\Commands\Database\MigrateRefresh.php(85): CodeIgniter\CLI\BaseCommand->call('migrate', Array)
+#11 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 E:\development\Proyectos\UPN212TEZIUTLAN_old\evaldoc\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
