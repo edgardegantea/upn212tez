@@ -1,5 +1,5 @@
 <!-- INICIO DE ASIDE -->
-<aside class="main-sidebar sidebar-dark-primary elevation-4 active">
+<aside class="main-sidebar sidebar-dark-primary bg-navy elevation-4 active">
 
     <a href="<?= base_url('/admin'); ?>" class="brand-link" style="text-decoration: none">
         <img src="<?= base_url('assets/img/logo/upnloader.png'); ?>" alt="Dashboard" class="brand-image img-circle elevation-3" style="opacity: .8">

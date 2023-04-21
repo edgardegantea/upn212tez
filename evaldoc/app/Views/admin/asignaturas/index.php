@@ -36,8 +36,7 @@ $this->section('encabezado') ?><p class="text-uppercase">Asignaturas</p><?= $thi
             <div class="card">
                 <div class="card-header">
                     <h5 class="card-title">Asignaturas</h5>
-                    <a href="<?= base_url('admin/asignaturas/new') ?>" class="btn btn-primary float-right">Nueva
-                        asignatura</a>
+                    <a href="<?= base_url('admin/asignaturas/new') ?>" class="btn btn-primary float-right">Nueva asignatura</a>
                 </div>
                 <div class="card-body">
                     <table class="table table-striped">

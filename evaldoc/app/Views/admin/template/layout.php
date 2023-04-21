@@ -30,7 +30,7 @@
              height="300" width="300">
     </div>
 
-    <nav class="main-header navbar navbar-expand navbar-dark">
+    <nav class="main-header navbar navbar-expand navbar-dark bg-navy">
 
         <ul class="navbar-nav">
             <li class="nav-item">

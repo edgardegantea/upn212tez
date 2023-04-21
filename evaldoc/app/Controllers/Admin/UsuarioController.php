@@ -67,14 +67,11 @@ class UsuarioController extends ResourceController
     public function create()
     {
         $inputs = $this->validate([
-            'rol'       => 'required',
-            'codigo'    => 'required|min_length[2]|max_length[10]',
-            'nombre'    => 'required|min_length[2]|max_length[50]',
-            'apaterno'  => 'required|min_length[2]|max_length[50]',
-            'amaterno'  => 'required|min_length[2]',
-            'email'     => 'required|min_length[6]|max_length[80]|valid_email|is_unique[usuarios.email]',
-            'password'  => 'required|min_length[6]|max_length[255]',
-            'sexo'      => 'required'
+            'codigo'        => 'required|min_length[2]|max_length[10]',
+            'nombre'        => 'required|min_length[2]|max_length[50]',
+            'tipo'          => 'required|min_length[2]|max_length[50]',
+            'fechaInicio'   => 'required',
+            'fechaFin'      => 'required'
         ]);
 
         if (!$inputs) {

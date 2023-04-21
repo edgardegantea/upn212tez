@@ -7,7 +7,7 @@ use CodeIgniter\Model;
 class PeriodoEscolar extends Model
 {
     protected $DBGroup          = 'default';
-    protected $table            = 'periodoescolars';
+    protected $table            = 'periodoescolar';
     protected $primaryKey       = 'id';
     protected $useAutoIncrement = true;
     protected $insertID         = 0;

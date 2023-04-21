@@ -74,7 +74,7 @@
 
 </head>
 
-<body class="text-center">
+<body class="text-center" style="background-color: navy">
     <main class="form-signin w-100 m-auto">
 
             <?php if (isset($validation)) : ?>
@@ -88,11 +88,11 @@
 
             <form class="" action="<?= base_url('login'); ?>" method="post">
 
-                <img style="outline: none" class="mb-4" src="<?php echo base_url('assets/img/logo/upnlogotez.jpg'); ?>" alt="" width="200">
+                <!-- <img style="outline: none" class="mb-4" src="<?php echo base_url('assets/img/logo/upnlogotez.jpg'); ?>" alt="" width="200"> -->
 
                <!-- <h2 class="mb-5">Evaluación docente</h2> -->
 
-                <h1 class="h3 mb-3 fw-normal">Iniciar sesión</h1>
+                <h1 class="h3 mb-3 fw-normal" style="color: white">Iniciar sesión</h1>
 
                 <div class="form-floating">
                     <input type="email" name="email" class="form-control" id="floatingInput"
@@ -113,7 +113,7 @@
         </div>
         -->
 
-                <button class="w-100 btn btn-lg btn-primary" type="submit">Ingresar</button>
+                <button class="w-100 btn btn-lg btn-primary" style="color:#fff;" type="submit">Ingresar</button>
 
             </form>
         </main>

@@ -152,9 +152,7 @@
 
 
 
-    <?= $this->include('admin/template/aside'); ?>
-
-
+    <?= $this->include('estudiante/template/aside'); ?>
 
     <div class="content-wrapper">
 

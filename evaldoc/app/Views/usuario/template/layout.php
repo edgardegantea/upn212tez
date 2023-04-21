@@ -27,7 +27,7 @@
     <style>
 
         #body {
-            background-color: darkblue;
+            background-color: blue;
         }
 
         .bd-placeholder-img {
@@ -47,10 +47,10 @@
         .b-example-divider {
             width: 100%;
             height: 3rem;
-            background-color: rgba(255, 255, 255, .1);
+            background-color: rgba(255, 255, 255, 100);
             border: solid rgba(0, 0, 0, .15);
             border-width: 1px 0;
-            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 255, 100), inset 0 .125em .5em rgba(0, 0, 255, .15);
         }
 
         .b-example-vr {
@@ -108,7 +108,7 @@
     <!-- Custom styles for this template -->
     <link href="<?php echo base_url('assets/css/cover.css'); ?>" rel="stylesheet">
 </head>
-<body class="d-flex h-100 text-center text-bg-dark">
+<body class="d-flex h-100 text-center bg-navy">
 
 <!--
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
