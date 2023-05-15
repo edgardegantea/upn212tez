@@ -6,7 +6,7 @@
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Sistema de Evaluación Docente UPN-212-Teziutlán"
+    <meta name="description" content="Sistema de Evaluación Docente UPN-212-Teziutlán">
     <meta name="author" content="Edgar Degante Aguilar">
     <title>UPN212 - Evaluación Docente</title>
 
@@ -26,8 +26,13 @@
 
     <style>
 
+
+        #h1 #h2 #h3 #h4 #h5 #h6 #p {
+            color: white;
+        }
+
         #body {
-            background-color: blue;
+            background-color: #0a53be;
         }
 
         .bd-placeholder-img {
@@ -50,7 +55,7 @@
             background-color: rgba(255, 255, 255, 100);
             border: solid rgba(0, 0, 0, .15);
             border-width: 1px 0;
-            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 255, 100), inset 0 .125em .5em rgba(0, 0, 255, .15);
+            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 180, 100), inset 0 .125em .5em rgba(0, 0, 255, .15);
         }
 
         .b-example-vr {
@@ -108,7 +113,7 @@
     <!-- Custom styles for this template -->
     <link href="<?php echo base_url('assets/css/cover.css'); ?>" rel="stylesheet">
 </head>
-<body class="d-flex h-100 text-center bg-navy">
+<body class="d-flex h-100 text-center text-light" style="background-color: #0a53be">
 
 <!--
     <svg xmlns="http://www.w3.org/2000/svg" style="display: none;">

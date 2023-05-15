@@ -74,7 +74,8 @@
 
 </head>
 
-<body class="text-center" style="background-color: navy">
+<!-- <body class="text-center" style="background-color: #0a53be"> -->
+<body class="text-center" style="background-color: #0a53be">
     <main class="form-signin w-100 m-auto">
 
             <?php if (isset($validation)) : ?>
@@ -113,7 +114,7 @@
         </div>
         -->
 
-                <button class="w-100 btn btn-lg btn-primary" style="color:#fff;" type="submit">Ingresar</button>
+                <button class="w-100 btn btn-lg btn-light" style="color: navy;" type="submit">Ingresar</button>
 
             </form>
         </main>

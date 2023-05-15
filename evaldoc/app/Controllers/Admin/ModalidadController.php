@@ -2,7 +2,7 @@
 
 namespace App\Controllers\Admin;
 
-use App\Models\Modalidad;
+use App\Models\ModalidadModel;
 use CodeIgniter\RESTful\ResourceController;
 
 class ModalidadController extends ResourceController
@@ -12,7 +12,7 @@ class ModalidadController extends ResourceController
 
     public function __construct()
     {
-        $this->modalidad = new Modalidad();
+        $this->modalidad = new ModalidadModel();
         helper(['form', 'url', 'session']);
         $this->session = \Config\Services::session();
     }
@@ -75,7 +75,7 @@ class ModalidadController extends ResourceController
         ]);
 
         return redirect()->to(site_url('/admin/modalidades'));
-        session()->setFlashdata("success", "Modalidad registrada con éxito");
+        session()->setFlashdata("success", "ModalidadModel registrada con éxito");
     }
 
     /**

@@ -68,10 +68,7 @@ class UsuarioController extends ResourceController
     {
         $inputs = $this->validate([
             'codigo'        => 'required|min_length[2]|max_length[10]',
-            'nombre'        => 'required|min_length[2]|max_length[50]',
-            'tipo'          => 'required|min_length[2]|max_length[50]',
-            'fechaInicio'   => 'required',
-            'fechaFin'      => 'required'
+            'nombre'        => 'required|min_length[2]|max_length[50]'
         ]);
 
         if (!$inputs) {
@@ -87,7 +84,8 @@ class UsuarioController extends ResourceController
             'email'     => $this->request->getVar('email'),
             'password'  => password_hash($this->request->getVar('password'), PASSWORD_DEFAULT),
             'foto'      => $this->request->getVar('foto'),
-            'sexo'      => $this->request->getVar('sexo')
+            'sexo'      => $this->request->getVar('sexo'),
+            'bio'       => $this->request->getVar('bio')
         ]);
 
         return redirect()->to(site_url('/admin/usuarios'));

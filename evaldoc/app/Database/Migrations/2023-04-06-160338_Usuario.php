@@ -20,7 +20,9 @@ class Usuario extends Migration
             'email'         => ['type' => 'varchar', 'constraint' => 100, 'unique' => true],
             'password'      => ['type' => 'varchar', 'constraint' => 255],
             'foto'          => ['type' => 'varchar', 'constraint' => 255, 'null' => true],
-            'sexo'          => ['type' => 'enum', 'constraint' => ['Hombre', 'Mujer'], 'default' => 'Mujer'],
+            'sexo'          => ['type' => 'varchar', 'constraint' => 20],
+            'bio'           => ['type' => 'varchar', 'constraint' => 500],
+            // estado: estudiante activo, inactivo, egresado, baja
             'created_at'    => ['type' => 'timestamp', 'default' => new RawSql('CURRENT_TIMESTAMP')],
             'updated_at'    => ['type' => 'timestamp', 'null' => true],
             'deleted_at'    => ['type' => 'timestamp', 'null' => true]

@@ -24,7 +24,7 @@ $this->section('title') ?>Crear usuario<?= $this->endSection();
                     <div class="col-md-4">
                         <div class="form-group mb-3 has-validation">
                             <label class="form-label">PERFIL:</label>
-                            <select class="form-control" name="rol" id="">
+                            <select class="form-control" name="rol" id="perfil">
                                 <option value="estudiante">Estudiante</option>
                                 <option value="docente">Docente</option>
                                 <option value="admin">Administrador</option>
@@ -148,7 +148,7 @@ $this->section('title') ?>Crear usuario<?= $this->endSection();
                         <div class="form-group">
                             <label class="form-label">Información acerca de tí:</label>
                             <textarea
-                                class="form-control <?php if ($validation->getError('description')): ?>is-invalid<?php endif ?>"
+                                class="form-control <?php if ($validation->getError('bio')): ?>is-invalid<?php endif ?>"
                                 name="bio" placeholder="Coméntanos sobre tí"><?php echo set_value('bio'); ?></textarea>
                             <?php if ($validation->getError('bio')): ?>
                                 <div class="invalid-feedback">

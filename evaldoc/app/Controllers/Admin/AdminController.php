@@ -19,4 +19,10 @@ class AdminController extends BaseController
     {
         return view('admin/dashboard');
     }
+
+    public function perfil()
+    {
+        return view('admin/perfil/index');
+    }
+
 }

@@ -1,5 +1,5 @@
 <!-- INICIO DE ASIDE -->
-<aside class="main-sidebar sidebar-dark-primary bg-navy elevation-4 active">
+<aside class="main-sidebar sidebar-dark-navy bg-navy elevation-4 active">
 
     <a href="<?= base_url('/admin'); ?>" class="brand-link" style="text-decoration: none">
         <img src="<?= base_url('assets/img/logo/upnloader.png'); ?>" alt="Dashboard" class="brand-image img-circle elevation-3" style="opacity: .8">
@@ -56,6 +56,12 @@
                     <a href="<?= base_url('admin/sedes'); ?>" class="nav-link">
                         <i class="nav-icon fas fa-school"></i>
                         <p>Sedes</p>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="<?= base_url('admin/modalidades'); ?>" class="nav-link">
+                        <i class="nav-icon fas fa-voicemail"></i>
+                        <p>Modalidades</p>
                     </a>
                 </li>
                 <li class="nav-header">MÓDULOS DEL SISTEMA</li>

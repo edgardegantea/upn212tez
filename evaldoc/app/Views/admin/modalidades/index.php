@@ -1,5 +1,5 @@
 <?= $this->extend('admin/template/layout');
-$this->section('title') ?> Sedes <?= $this->endSection();
+$this->section('title') ?> Modalidades <?= $this->endSection();
 ?>
 
 
@@ -27,58 +27,37 @@ $this->section('title') ?> Sedes <?= $this->endSection();
             <div class="card">
                 <div class="card-header">
                     <h5 class="card-title">Sedes</h5>
-                    <a href="<?= base_url('admin/sedes/new') ?>" class="btn btn-primary float-right">Nueva
-                        sede</a>
+                    <a href="<?= base_url('admin/modalidades/new') ?>" class="btn btn-primary float-right">Nueva
+                        Modalidad</a>
                 </div>
                 <div class="card-body">
                     <table id="example" class="table table-bordered table-striped">
                         <thead>
                         <tr>
-                            <th>SEDE</th>
-                            <th>TELÉFONO</th>
-                            <th>CORREO ELECTRÓNICO</th>
-                            <th>WEBSITE</th>
-                            <th>FACEBOOK</th>
+                            <th>MODALIDAD</th>
                             <th>ACCIONES</th>
                         </tr>
                         </thead>
 
                         <tbody>
-                        <?php if (!empty($sedes) && is_array($sedes)): ?>
-                            <?php foreach ($sedes as $sede): ?>
+                        <?php if (!empty($modalidades) && is_array($modalidades)): ?>
+                            <?php foreach ($modalidades as $modalidad): ?>
 
                                 <td>
-                                    <?= $sede['nombre'] ?>
+                                    <?= $modalidad['nombre'] ?>
                                 </td>
-
-                                <td>
-                                    <?= $sede['telefono'] ?>
-                                </td>
-
-                                <td>
-                                    <?= $sede['email'] ?>
-                                </td>
-
-                                <td>
-                                    <?= $sede['website'] ?>
-                                </td>
-
-                                <td>
-                                    <?= $sede['facebook'] ?>
-                                </td>
-
                                 <td class="d-flex">
-                                    <a href="<?= base_url('/admin/sedes/' . $sede['id']); ?>" class="btn btn-sm mx-1"
+                                    <a href="<?= base_url('/admin/modalidades/' . $modalidad['id']); ?>" class="btn btn-sm mx-1"
                                        title="Ver"><span class="fas fa-eye"><span></a>
-                                    <a href="<?= base_url('/admin/sedes/' . $sede['id']. '/edit'); ?>"
+                                    <a href="<?= base_url('/admin/modalidades/' . $modalidad['id']. '/edit'); ?>"
                                        class="btn btn-sm mx-1"><span class="fas fa-edit"><span></a>
 
                                     <form class="display-none" method="post"
-                                          action="<?= base_url('/admin/sedes/' . $sede['id']); ?>"
-                                          id="sedeDeleteForm<?= $sede['id'];?>">
+                                          action="<?= base_url('/admin/modalidades/' . $modalidad['id']); ?>"
+                                          id="modalidadDeleteForm<?= $modalidad['id'];?>">
                                         <input type="hidden" name="_method" value="DELETE"/>
                                         <a href="javascript:void(0)"
-                                           onclick="deleteSede('sedeDeleteForm<?= $sede['id']; ?>')"
+                                           onclick="deleteModalidad('modalidadDeleteForm<?= $modalidad['id']; ?>')"
                                            class="btn btn-sm bg-danger" title="Eliminar registro"><span
                                                 class="fas fa-trash"></span></a>
                                     </form>
@@ -89,11 +68,8 @@ $this->section('title') ?> Sedes <?= $this->endSection();
                         </tbody>
                         <tfoot>
                         <tr>
-                            <th>SEDE</th>
-                            <th>TELÉFONO</th>
-                            <th>CORREO ELECTRÓNICO</th>
-                            <th>WEBSITE</th>
-                            <th>FACEBOOK</th>
+                            <th>MODALIDAD</th>
+
                             <th>ACCIONES</th>
                         </tr>
                         </tfoot>
@@ -111,8 +87,8 @@ $this->section('title') ?> Sedes <?= $this->endSection();
     });
 
 
-    function deleteSede(formId) {
-        var confirm = window.confirm('¿Desea eliminar la sede seleccionada? Esta acción es irreversible.');
+    function deleteModalidad(formId) {
+        var confirm = window.confirm('¿Desea eliminar la modalidad seleccionada? Esta acción es irreversible.');
         if (confirm == true) {
             document.getElementById(formId).submit();
         }

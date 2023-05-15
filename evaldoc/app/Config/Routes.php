@@ -29,10 +29,13 @@ $routes->group('admin', ['filter' => 'auth'], function ($routes) {
     $routes->resource('asignaturas', ['controller' => 'Admin\AsignaturaController']);
     $routes->resource('sedes', ['controller' => 'Admin\SedeController']);
     $routes->resource('estudiantes', ['controller' => 'Admin\EstudianteController']);
+    $routes->resource('modalidades', ['controller' => 'Admin\ModalidadController']);
+    $routes->resource('periodosescolares', ['controller' => 'Admin\PeriodoEscolarController']);
 });
 
 $routes->group('docente', ['filter' => 'auth'], function ($routes) {
     $routes->get('/', 'Docente\DocenteController::index');
+    $routes->resource('asignaturas', ['controller' => 'Docente\AsignaturaController'], ['only' => ['index', 'show']]);
 });
 
 $routes->group('estudiante', ['filter' => 'auth'], function ($routes) {

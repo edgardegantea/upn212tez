@@ -65,19 +65,16 @@ $this->section('title') ?> Estudiantes <?= $this->endSection();
                                     <td><?= $usuario['sexo'] ?></td>
                                     <td class="d-flex">
                                         <a href="<?= base_url('admin/estudiantes/' . $usuario['id']) ?>"
-                                           class="btn btn-sm btn-info mx-1" title="Ver"><i
-                                                class="bi bi-info-square"></i></a>
+                                           class="btn btn-default" title="Ver"><i class="fas fa-eye"></i></a>
                                         <a href="<?= base_url('admin/estudiantes/' . $usuario['id'] . '/edit') ?>"
-                                           class="btn btn-sm btn-success mx-1" title="Editar"><i
-                                                class="bi bi-pencil-square"></i></a>
+                                           class="btn btn-default" title="Editar"><i class="fas fa-edit"></i></a>
                                         <form class="display-none" method="post"
                                               action="<?= base_url('admin/estudiantes/' . $usuario['id']) ?>"
                                               id="usuarioDeleteForm<?= $usuario['id'] ?>">
                                             <input type="hidden" name="_method" value="DELETE"/>
                                             <a href="javascript:void(0)"
                                                onclick="deleteUsuario('usuarioDeleteForm<?= $usuario['id'] ?>')"
-                                               class="btn btn-sm btn-danger" title="Eliminar"><i
-                                                    class="bi bi-trash"></i></a>
+                                               class="btn btn-default" title="Eliminar"><i class="fas fa-trash text-red"></i></a>
                                         </form>
                                     </td>
                                 </tr>

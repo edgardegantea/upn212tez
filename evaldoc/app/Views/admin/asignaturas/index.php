@@ -1,9 +1,6 @@
 <?= $this->extend('admin/template/layout');
 
 $this->section('title') ?> Asignaturas <?= $this->endSection();
-
-$this->section('encabezado') ?><p class="text-uppercase">Asignaturas</p><?= $this->endSection();
-
 ?>
 
 
@@ -76,7 +73,7 @@ $this->section('encabezado') ?><p class="text-uppercase">Asignaturas</p><?= $thi
                                             <a href="javascript:void(0)"
                                                onclick="deleteAsignatura('asignaturaDeleteForm<?= $asignatura['id'] ?>')"
                                                class="btn btn-sm btn-danger" title="Eliminar"><i
-                                                    class="bi bi-trash"></i></a>
+                                                    class="fas fa-trash"></i></a>
                                         </form>
                                     </td>
                                 </tr>
