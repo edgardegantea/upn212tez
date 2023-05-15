@@ -1,9 +1,6 @@
 <?= $this->extend('admin/template/layout');
 
 $this->section('title') ?> Ver estudiante <?= $this->endSection();
-
-$this->section('encabezado') ?><p class="text-uppercase">Información del estudiante seleccionado</p><?= $this->endSection();
-
 ?>
 
 

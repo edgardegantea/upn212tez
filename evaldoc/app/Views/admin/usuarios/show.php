@@ -1,11 +1,5 @@
 <?= $this->extend('admin/template/layout');
-
-$this->section('title') ?> Ver usuario <?= $this->endSection();
-
-$this->section('encabezado') ?><p class="text-uppercase">Información del usuario
-    seleccionado</p><?= $this->endSection();
-
-?>
+$this->section('title') ?> Ver usuario <?= $this->endSection(); ?>
 
 
 
