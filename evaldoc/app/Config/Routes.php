@@ -44,6 +44,7 @@ $routes->group('estudiante', ['filter' => 'auth'], function ($routes) {
 
 $routes->get('logout', 'UserController::logout');
 
+$routes->get('evaluacion', 'EvaluacionController::index');
 
 // Ruta de prueba
 $routes->get('login2', 'UserController::login2');
