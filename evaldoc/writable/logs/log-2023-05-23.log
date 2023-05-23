@@ -1,0 +1,65 @@
+ERROR - 2023-05-23 01:54:15 --> mysqli_sql_exception: Unknown table 'upn212evaldoc.evaluacion' in D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\MySQLi\Connection.php(295): mysqli->query('DROP TABLE `eva...', 0)
+#1 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('DROP TABLE `eva...')
+#2 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('DROP TABLE `eva...')
+#3 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\Forge.php(637): CodeIgniter\Database\BaseConnection->query('DROP TABLE `eva...')
+#4 D:\development\Proyectos\UPN212TEZ\evaldoc\app\Database\Migrations\2023-05-16-203017_Evaluacion.php(32): CodeIgniter\Database\Forge->dropTable('evaluacion')
+#5 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\MigrationRunner.php(877): App\Database\Migrations\Evaluacion->down()
+#6 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\MigrationRunner.php(299): CodeIgniter\Database\MigrationRunner->migrate('down', Object(stdClass))
+#7 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Commands\Database\MigrateRollback.php(92): CodeIgniter\Database\MigrationRunner->regress(0)
+#8 D:\development\Proyectos\UPN212TEZ\evaldoc\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRollback->run(Array)
+#9 D:\development\Proyectos\UPN212TEZ\evaldoc\system\CLI\BaseCommand.php(114): CodeIgniter\CLI\Commands->run('migrate:rollbac...', Array)
+#10 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Commands\Database\MigrateRefresh.php(84): CodeIgniter\CLI\BaseCommand->call('migrate:rollbac...', Array)
+#11 D:\development\Proyectos\UPN212TEZ\evaldoc\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\MigrateRefresh->run(Array)
+#12 D:\development\Proyectos\UPN212TEZ\evaldoc\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('migrate:refresh', Array)
+#13 D:\development\Proyectos\UPN212TEZ\evaldoc\spark(97): CodeIgniter\CLI\Console->run()
+#14 {main}
+ERROR - 2023-05-23 02:12:37 --> mysqli_sql_exception: Table 'upn212evaldoc.dimensions' doesn't exist in D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `di...', 0)
+#1 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `di...')
+#2 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `di...')
+#3 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `di...', NULL, false)
+#4 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Model.php(364): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 D:\development\Proyectos\UPN212TEZ\evaldoc\system\BaseModel.php(874): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 D:\development\Proyectos\UPN212TEZ\evaldoc\app\Database\Seeds\Dimension.php(14): CodeIgniter\BaseModel->insertBatch(Array)
+#8 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\Seeder.php(146): App\Database\Seeds\Dimension->run()
+#9 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#10 D:\development\Proyectos\UPN212TEZ\evaldoc\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#11 D:\development\Proyectos\UPN212TEZ\evaldoc\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#12 D:\development\Proyectos\UPN212TEZ\evaldoc\spark(97): CodeIgniter\CLI\Console->run()
+#13 {main}
+ERROR - 2023-05-23 02:13:36 --> mysqli_sql_exception: Table 'upn212evaldoc.dimensions' doesn't exist in D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `di...', 0)
+#1 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `di...')
+#2 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `di...')
+#3 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `di...', NULL, false)
+#4 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Model.php(364): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 D:\development\Proyectos\UPN212TEZ\evaldoc\system\BaseModel.php(874): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 D:\development\Proyectos\UPN212TEZ\evaldoc\app\Database\Seeds\Dimension.php(14): CodeIgniter\BaseModel->insertBatch(Array)
+#8 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\Seeder.php(146): App\Database\Seeds\Dimension->run()
+#9 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#10 D:\development\Proyectos\UPN212TEZ\evaldoc\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#11 D:\development\Proyectos\UPN212TEZ\evaldoc\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#12 D:\development\Proyectos\UPN212TEZ\evaldoc\spark(97): CodeIgniter\CLI\Console->run()
+#13 {main}
+ERROR - 2023-05-23 02:13:40 --> mysqli_sql_exception: Table 'upn212evaldoc.dimensions' doesn't exist in D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\MySQLi\Connection.php:295
+Stack trace:
+#0 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\MySQLi\Connection.php(295): mysqli->query('INSERT INTO `di...', 0)
+#1 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\BaseConnection.php(691): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `di...')
+#2 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\BaseConnection.php(605): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `di...')
+#3 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\BaseBuilder.php(1801): CodeIgniter\Database\BaseConnection->query('INSERT INTO `di...', NULL, false)
+#4 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\BaseBuilder.php(2192): CodeIgniter\Database\BaseBuilder->batchExecute('_insertBatch', 100)
+#5 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Model.php(364): CodeIgniter\Database\BaseBuilder->insertBatch(Array, NULL, 100)
+#6 D:\development\Proyectos\UPN212TEZ\evaldoc\system\BaseModel.php(874): CodeIgniter\Model->doInsertBatch(Array, NULL, 100, false)
+#7 D:\development\Proyectos\UPN212TEZ\evaldoc\app\Database\Seeds\Dimension.php(14): CodeIgniter\BaseModel->insertBatch(Array)
+#8 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Database\Seeder.php(146): App\Database\Seeds\Dimension->run()
+#9 D:\development\Proyectos\UPN212TEZ\evaldoc\system\Commands\Database\Seed.php(77): CodeIgniter\Database\Seeder->call('App\\Database\\Se...')
+#10 D:\development\Proyectos\UPN212TEZ\evaldoc\system\CLI\Commands.php(65): CodeIgniter\Commands\Database\Seed->run(Array)
+#11 D:\development\Proyectos\UPN212TEZ\evaldoc\system\CLI\Console.php(37): CodeIgniter\CLI\Commands->run('db:seed', Array)
+#12 D:\development\Proyectos\UPN212TEZ\evaldoc\spark(97): CodeIgniter\CLI\Console->run()
+#13 {main}
